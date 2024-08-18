@@ -12,7 +12,7 @@ var app = builder.Build();
 
 app.UseMiddleware<ExceptionMiddleware>();
 app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod()
-    .WithOrigins("http://localhost:4200", "https://localhost:4200"));
+    .WithOrigins("http://localhost:5200", "https://localhost:5200"));
 
 app.UseAuthentication();
 app.UseAuthorization();
